@@ -1,0 +1,13 @@
+program second;
+#include( "stdlib.hhf" );
+static
+    w: int8 := 7;
+    s: real32 := 12.4e2;
+    znak: char := #128;
+begin second;
+    shl(1,w);
+    stdout.put(w);
+    //stdout.putr32(pi,5,4);
+    stdout.put(znak);
+    //stdout.put( "Znak c = ",c," ' ",nl);
+end second;

@@ -1,0 +1,7 @@
+program pierwszy;
+#include( "stdlib.hhf" );
+begin pierwszy;
+    
+    stdout.put ( "Hello, world!", nl);
+    
+end pierwszy;
