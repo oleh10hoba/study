@@ -1,0 +1,10 @@
+[PO - grupa dr Mi³osz] info z kolokwium
+Ogólnie by³o kilka grup
+Grupa C
+3 zadania:
+1) N studentów, dla ka¿dego jedna ocena, wyœwietliæ najwiêksza ocenê
+2) dodaæ drug¹ klasê która wyœwietli ile tych najlepszych ocen by³o
+3) dodaæ jakieœ pole statyczne oraz opisaæ komentarzami gdzie jest metoda, obiekt, pole, lista, dziedziczenie, hermetyzacja itp.
+Jedna grupa mia³a z p³acami pracowników.
+Od razu sprawdza³a i wstawia³a ocenê.
+Jak sprawdza³a to dopytywa³a i nakierowywa³a jak mia³o siê jakiœ b³¹d, nastêpnie dawa³a szansê wstawienia poprawy w kodzie
