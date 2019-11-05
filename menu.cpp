@@ -43,10 +43,3 @@ int main()
     return 0;
 }
 ///////////////////////////////////////////////////////////////////////////
-int sign(float num)
-{
-    //return 1;
-    if(num>0) return 1;
-    else if(num<0) return -1;
-    else return 0;
-}
