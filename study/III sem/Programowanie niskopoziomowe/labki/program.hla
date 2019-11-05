@@ -1,0 +1,21 @@
+program jeden;
+
+	#include ("stdlib.hhf");
+
+static
+	zmienna1: int8 := 8;
+	zmienna2: int16 := 1501;
+	zmienna3: int32 := -311232;
+	
+	zmiennalogiczna: boolean;
+	falszlogiczny: boolean:=false;
+	prawdalogiczna: boolean:=true;
+	
+	
+
+begin jeden;
+
+	stdout.put("123");
+	stdin.get(zmienna1);
+	stdout.put("Zmienna 1 = ", zmienna1);
+end jeden;

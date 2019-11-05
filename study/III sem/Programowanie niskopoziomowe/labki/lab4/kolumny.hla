@@ -1,0 +1,22 @@
+program kolumny;
+
+#include("stdlib.hhf")
+
+static
+i: int8:=40;
+j: int8;
+
+begin kolumny;
+
+while (i>=1) do
+
+for(mov(0,j);j<=8;inc(j)) do
+stdout.put(i:3);
+dec(i);
+inc(j);
+endfor;
+stdout.newln();
+endwhile;
+
+
+end kolumny;

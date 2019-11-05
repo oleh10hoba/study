@@ -1,0 +1,46 @@
+program tablica3d;
+
+#include("stdlib.hhf");
+
+static
+	i: int16 :=0;
+	j: int16 :=0;
+	k: int16 :=0;
+	tablica: int32[3,4,5] := [	111,112,113,114,115,
+				  	121,122,123,124,125,
+				  	131,132,133,134,135,
+				 	141,142,143,144,145,
+					
+					211,212,213,214,215,
+				  	221,222,223,224,225,
+				  	231,232,233,234,235,
+				 	241,242,243,244,245,
+
+					311,312,313,314,315,
+				  	321,322,323,324,325,
+				  	331,332,333,334,335,
+				 	341,342,343,344,345
+				 ];
+begin tablica3d;
+	stdout.put("Tablica od 1",nl,nl);
+	stdout.put("Podaj numer warstwy: ");
+	stdin.get(i);
+	dec(i);
+	stdout.put("Podaj numer wiersza: ");
+	stdin.get(j);
+	dec(j);
+	stdout.put("Podaj numer kolumny: ");
+	stdin.get(k);
+	dec(k);
+	mov(0,eax);
+	mov(i,ax);
+	intmul(20,ax); //pozycja warstwy
+	mov(0,ebx);
+	mov(j,bx);  //pozycja wiersza
+	intmul(5,bx);
+	add(bx,ax); //pozycja kolumny
+	add(k,ax); 
+	stdout.put(tablica[eax*4], nl);
+end tablica3d;
+	
+	

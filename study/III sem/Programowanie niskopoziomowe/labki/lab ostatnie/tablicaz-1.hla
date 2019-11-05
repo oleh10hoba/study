@@ -1,0 +1,37 @@
+program tablicaz;
+
+#include("stdlib.hhf");
+
+static 
+	i: int16;
+	k: int16;
+	tablica: char[5,4] := [ 'a' , 'b' , 'c' , 'd',
+				'e' , 'f' , 'g' , 'h',
+				'i' , 'j' , 'k' , 'l',
+				'm' , 'n' , 'o' , 'p',
+				'r' , 's' , 't' , 'u'];
+
+begin tablicaz;
+
+	mov(0,eax);
+	for(mov(0,i) ; i<5 ; inc(i)) do
+		for(mov(0,k) ; k<4 ; inc(k)) do
+			mov(i,ax);
+			intmul(4,ax); //shl(2,ax)
+			add(k,ax);
+			stdout.put(tablica[eax]," , ");
+			endfor;
+		stdout.newln();
+		endfor;
+end tablicaz;
+
+
+
+
+
+
+
+
+
+
+

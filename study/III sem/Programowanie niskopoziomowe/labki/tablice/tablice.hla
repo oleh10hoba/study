@@ -1,0 +1,46 @@
+program tablice;
+
+#include("stdlib.hhf")
+
+static
+	/*
+	tab8: int8[10]:=[0,1,2,3,4,5,6,7,8,9];
+	tab32: int32[10]:=[0,1,2,3,4,5,6,7,8,9];
+	x: int8;
+	*/
+	i: int32;
+	j: int32;
+	tab2: int8[4,8]:=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+
+begin tablice;
+	
+	/*
+	stdout.put("Ktory element tablicy?: ");
+	stdin.get(x);
+	movsx(x, eax);
+	stdout.put("tab8: ",tab8[eax], nl);
+	stdout.put("tab32: ",tab32[eax*4], nl);
+	*/
+	/*
+	mov(1,al);
+	stdout.put("przed ",al,nl);
+	shl(1,al);
+	stdout.put("po ",al);
+	*/
+
+	stdout.put("Ktory wiersz tablicy?: ");
+	stdin.get(i);
+	stdout.put("Ktora kolumna tablicy?: ",nl);
+	stdin.get(j);
+	dec(i);
+	dec(j);	
+	mov(i,ebx);
+	intmul(8,ebx);
+	add(j,ebx);
+	stdout.put(tab2[ebx*4]);
+	
+	
+	
+	//stdout.put("tab2: ",tab2[eax*8], nl);
+	
+end tablice;

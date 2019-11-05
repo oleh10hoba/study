@@ -1,0 +1,40 @@
+program konwerter;
+
+#include("stdlib.hhf")
+
+static
+a: int32;
+
+
+begin konwerter;
+
+/*
+stdout.put("Podaj liczbe DEC: ");
+stdin.get(a);
+mov(a,eax);
+stdout.put("Liczba w HEX to: ", eax, "H",nl);
+
+stdout.put("Podaj liczbe HEX: ");
+stdin.get(eax);
+mov(eax,a);
+stdout.put("Liczba w DEC to: ", a, nl);
+*/
+
+/*
+stdout.put("Podaj liczbe HEX: ");
+stdin.get(eax);
+stdout.put("Podana liczba w DEC to: ");
+stdout.puti32(eax);
+*/
+
+/*
+stdout.put("Podaj liczbe HEX: ");
+mov(stdin.geth32(),a);
+stdout.puth32(a);
+*/
+
+
+
+
+
+end konwerter;

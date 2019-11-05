@@ -1,0 +1,59 @@
+program procedury;
+
+#include ("stdlib.hhf")
+
+static
+
+tab: int32[256];
+i: int32:=1;
+
+procedure zero;
+
+var
+a: int32;
+
+begin zero;
+
+mov(123,a);
+
+mov(a,ebx);
+for(mov(ebx,ecx); ecx<256; inc(ecx)) do
+mov(0,tab[ecx*4]);
+
+endfor;
+
+end zero;
+
+
+
+begin procedury;
+
+
+for(mov(0,ecx);ecx<256;inc(ecx)) do
+
+mov(i,tab[ecx*4]);
+inc(i);
+
+endfor;  //wczytanie wartoœci
+
+
+for(mov(0,ecx);ecx<256;inc(ecx)) do
+
+stdout.put(tab[ecx*4], ", ");
+
+endfor; //wyswietlanie
+
+zero();
+
+stdout.newln();
+
+for(mov(0,ecx);ecx<256;inc(ecx)) do
+
+stdout.put(tab[ecx*4], ", ")
+
+endfor; //wyswietlanie tablicy po zerowaniu
+
+
+
+end procedury;
+

@@ -1,0 +1,16 @@
+PRAKTYKA:
+
+- tablica 1/2D, char/uns/int i wyœwietlenie wybranego elementu
+- wyœwietlanie w pêtli (mo¿e byæ z u¿yciem ASCII)
+- zamiany DEC <-> HEX (reg, zmienne)
+
+ASCII 65-90 A-Z
+97-122 a-z
+
+TEORIA:
+- procedury wyœwietlaj¹ce w HEX <-> DEC (stdout.put8/32/64(reg) <-> stdout.putd(zm))
+- zmiana znaku zmiennej (neg, not)
+- rozszerzenie bitowe znakiem i zerem (movsx, movzx, cbw() AL->AX, cwde() AX->EAX)
+- procedury wyœwietlaj¹ce liczby zmiennoprzecinkowe (putr32/64/80(zmienna, szerokoœæ, dok³adnoœæ), pute(zm, szer))
+- U2
+- rozszerzenia

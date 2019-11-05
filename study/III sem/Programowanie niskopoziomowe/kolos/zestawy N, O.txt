@@ -1,0 +1,13 @@
+ Zestaw N
+1 zad. tablica char 5x5, odczyt wybranego elementu z tablicy
+2 zad. Qwordy w U2, hexadecymalnie np Ffh, 12120000h i podaæ znak
+3 zad co robi stdin.getiN Druga grupa mia³a stdout.puth
+4 zad zmienne uns16 - podaje je u¿ytkownik, ma je dodawaæ, odejmowaæ, mno¿yæ.
+5 zad szkielet procedury(tak ogólnie) i jak j¹ wywo³aæ
+
+ Zestaw O.
+1. napisz program który wypelni tablice jednowymiarowa od 1 do 10. Za ka¿dym wpisaniem liczby wyswietl tablice, uzywajac napisanej procedury.
+2. wypisz procedury wyswietlajace liczby zmienno przecinkowe, oraz jak one dzia³aj¹.
+3.napisz do czego sluza procedury stdout.putiN oraz stdout.puthN
+4. rozszerz ze znakiem liczby 1 bajtowe do liczby 16 bitowej ze znakiem; ABh FEh 65h 84h
+5. Jak rozszerzyc liczbe bitow ze znakiem i bez znakow.

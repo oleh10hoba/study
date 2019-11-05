@@ -1,0 +1,51 @@
+program movaddsub1;
+#include ("stdlib.hhf")
+
+static
+a: int8:=-7;
+b: int16:=-277;
+c: int32:=-66000;
+
+i: int8;
+
+
+begin movaddsub1;
+
+/*
+stdout.put("a= ",a);
+stdout.put(nl);
+stdout.put("b= ",b);
+stdout.put(nl);
+stdout.put("c= ",c);
+stdout.put(nl,nl);
+
+
+mov(0,AL);
+sub(a, AL);
+mov(AL, a);
+stdout.put("-a= ",a,nl);
+
+
+mov(0,AX);
+sub(b, AX);
+mov(AX, b);
+stdout.put("-b= ",b,nl);
+
+
+mov(0,EAX);
+sub(c, EAX);
+mov(EAX, c);
+stdout.put("-c= ",c,nl);
+
+add(666, EAX);
+stdout.put("-c + 666 = ",EAX);
+*/
+
+for (mov(10,i); i>0; sub(1,i)) do
+
+stdout.put(i:5);
+
+endfor;
+
+end movaddsub1;
+
