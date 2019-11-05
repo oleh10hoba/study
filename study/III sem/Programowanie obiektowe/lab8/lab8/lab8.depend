@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1513078550 source:c:\users\student.win-418olgvlugb\desktop\mj sydor\lab8\main.cpp
+	<iostream>
+
+1513079780 source:c:\users\student.win-418olgvlugb\desktop\mj sydor\lab8\src\tdomownik.cpp
+	"Tdomownik.h"
+	<iostream>
+	<iomanip>
+
+1513079548 c:\users\student.win-418olgvlugb\desktop\mj sydor\lab8\include\tdomownik.h
+	<string>
+
+1515255557 source:e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\main.cpp
+	<iostream>
+	"Tdomownik.h"
+	"Tpunkt.h"
+	<cmath>
+
+1515252770 source:e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\src\tdomownik.cpp
+	"Tdomownik.h"
+	<iostream>
+	<iomanip>
+
+1515252462 e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\include\tdomownik.h
+	<string>
+
+1515251393 source:e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\src\tsasiad.cpp
+	"Tsasiad.h"
+
+1515251387 e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\include\tsasiad.h
+	<iostream>
+	<string>
+
+1515255584 source:e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\src\tpunkt.cpp
+	"Tpunkt.h"
+	<cmath>
+
+1515253757 e:\studia\2 rok\3. semestr\programowanie obietkowe\lab8\lab8\include\tpunkt.h
+	<iostream>
+

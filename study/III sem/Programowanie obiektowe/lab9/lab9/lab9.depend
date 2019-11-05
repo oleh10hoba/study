@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1515342201 source:e:\studia\2 rok\3. semestr\programowanie obietkowe\lab9\lab9\main.cpp
+	<iostream>
+	<Ttime.h>
+
+1515342231 source:e:\studia\2 rok\3. semestr\programowanie obietkowe\lab9\lab9\src\ttime.cpp
+	"Ttime.h"
+
+1515342226 e:\studia\2 rok\3. semestr\programowanie obietkowe\lab9\lab9\include\ttime.h
+	<iostream>
+

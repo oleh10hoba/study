@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1516709748 source:c:\users\student.win-418olgvlugb\desktop\mj sidor lab11\lab11\main.cpp
+	<iostream>
+	<string.h>
+	<cmath>
+
