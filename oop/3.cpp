@@ -6,13 +6,14 @@ class Table2D
     int width;
     int height;
     int *begin;
-    int *array_1;
+    int * array_1;
 public:
     Table2D(string name, int width, int height):
         name(name), width(width), height(height)
     {
-        cout << "Constructor " << name << endl;
-        array_1 = new int[width*height];
+        int var = width * height;
+        array_1 = new int [var];
+        cout << "Constructor " << name << " sizeof - " << sizeof(array_1) << " - " << var << " - " << width << " " << height <<  endl;
     }
     Table2D(const Table2D& copied_object) :
         name(copied_object.name), width(copied_object.width), height(copied_object.height)
@@ -41,6 +42,24 @@ public:
     {
         array_1[row*width+collumn] = value;
     }
+    void set_element(int num, int value)
+    {
+        array_1[num] = value;
+    }
+    int get_sizeof_array_1()
+    {
+        return sizeof(this->array_1);
+    }
+    void print_all_element()
+    {
+        cout << this->name << " elements: " << endl;
+        cout << sizeof(this->array_1)<<endl;
+        for(int i = 0; i < sizeof(this->array_1); i++)
+        {
+            cout << array_1[i] << "\t" ;
+        }
+        cout << endl;
+    }
     int get_width() const
     {
         return width;
@@ -55,11 +74,14 @@ public:
     }
     Table2D add(const Table2D& added)
     {
-        Table2D new_object = Table2D("Added",width,height);
+        Table2D new_object = Table2D(this->name,this->width,this->height);
         for(int i = 0; i < sizeof(new_object.array_1); i++)
         {
             new_object.array_1[i] = added.array_1[i] + this->array_1[i];
+            cout << added.array_1[i] << " - " << this->array_1[i] << " - " << new_object.array_1[i] << endl;
         }
+        cout << endl << new_object.array_1[0] << endl;
+        cout << endl;
         return new_object;
     }
     Table2D multiply(const Table2D& multipled)
@@ -74,17 +96,33 @@ public:
     ~Table2D()
     {
         cout << "Destroyer " << name << endl;
-        //delete array_1[];
+        delete array_1;
     }
 };
 int main()
 {
-    Table2D t1 = Table2D("t1", 3, 4);
+    Table2D t1 = Table2D("t1", 5, 6);
+
     Table2D t2(t1);
-    Table2D t3 = Table2D("t3", 5, 6);
+    Table2D t3 = Table2D("t3", 2, 4);
     t2.set_name("t2");
-    t1.show();
-    t2.show();
-    t3.add(t3);
+    cout << t1.get_name() << " - " << t1.get_sizeof_array_1() << endl;
+    t2.set_element(0,   1);
+    t2.set_element(1,2);
+    t2.set_element(2,3);
+    t2.set_element(3,4);
+    t3.set_element(0,5);
+    t3.set_element(1,6);
+    t3.set_element(2,7);
+    t3.set_element(3,9);
+    cout << t2.get_name() << " - " << t2.get_sizeof_array_1() << endl;
+    t2.print_all_element();
+    t3.print_all_element();
+    cout << endl;
+    t3 = t3.add(t2);
+    t3.print_all_element();
+    cout << t3.get_name() << " - " << t3.get_sizeof_array_1() << endl;
+    int *ar = new int [6];
+    cout << "+" << sizeof(ar) << endl;
     return 0;
 }
