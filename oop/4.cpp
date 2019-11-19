@@ -3,14 +3,17 @@
 using namespace std;
 class Animal
 {
-public:
     static int counter ;
     string name;
-
+public:
     Animal(string name)
     {
         this->name = name; 
         Animal::counter ++;
+    }
+    string dajRodzajZwierzecia() const
+    {
+        return "Animal: ";
     }
     static int number_of_animals()
     {
@@ -24,13 +27,13 @@ public:
     {
         this->name = name;
     }
-    const string &  for_string()
+    const string for_string()
     {
-        const  string &const_ref = this->name;
-        return const_ref;
+        return "Animal has name: " + this->name;
     }
 };
 int Animal::counter = 0;
+//derived_class    base_class     
 class Dog: public Animal
 {
 public:
@@ -38,11 +41,26 @@ public:
     {
 
     }
+    string dajRodzajZwierzecia()
+    {
+        return "Dog";
+    }
+    void bark()
+    {
+        cout << "Gaw - gaw" << endl;
+    }
+    void give_paw()
+    {
+        cout << "give me a paw" << endl;
+    }
 
 };
 int main()
 {
     Dog d1 = Dog("Tuzik");
-    cout << d1.get_name() << endl;
+    cout << d1.get_name() << " " ; 
+    d1.give_paw();
+    d1.bark();
+    cout << d1.for_string() << endl;
     return 0;
 }
