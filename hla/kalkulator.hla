@@ -1,0 +1,98 @@
+program kalkulator;
+#include("stdlib.hhf");
+var
+	zm1:int32;
+	zm2:int32;
+	wyn:int32;
+	wyb:int8;
+	wynmnoz:int64;
+	wyndziel:int32;
+	czyminus:boolean;
+	dodatkowa:int8;
+	
+begin kalkulator;
+
+	stdout.put("1)Dodawanie",nl,"2)Odejmowanie",nl,"3)Mnozenie",nl,"4)Dzielenie",nl,"5)Potegowanie",nl"0)Wyjscie",nl);
+	repeat
+	stdout.put("Twoj wybor: ");
+	stdin.get(wyb);
+	if(wyb=1)then
+		stdout.put("Wprowadz 1 dodawana: ");
+		stdin.get(zm1);
+		stdout.put("Wprowadz 2 dodawana: ");
+		stdin.get(zm2);
+		mov(zm1,eax);
+		add(zm2,eax);
+		mov(eax,wyn);
+		stdout.put("Wyn = ",wyn,nl);
+
+
+	elseif(wyb=2)then
+		stdout.put("Wprowadz odjemna ",nl);
+		stdin.get(zm1);
+		stdout.put("Wprowadz odjemnik ",nl);
+		stdin.get(zm2);
+		mov(zm1,eax);
+		sub(zm2,eax);
+		mov(eax,wyn);
+		stdout.put("Wyn = ",wyn,nl);
+	elseif(wyb=3)then
+		stdout.put("Wprowadz 1 mnozona ",nl);
+		stdin.get(zm1);
+		stdout.put("Wprowadz 2 mnozona ",nl);
+		stdin.get(zm2);
+		mov(zm1,eax);
+		imul(zm2,eax);
+		mov(edx:eax,wynmnoz);
+		stdout.put("Wymnoz = ",wynmnoz,nl);
+	elseif(wyb=4)then
+		stdout.put("Wprowadz dzielna ",nl);
+		stdin.get(zm1);
+		stdout.put("Wprowadz dzielnik ",nl);
+	repeat
+		stdin.get(zm2);
+	if(zm2=0)then
+	stdout.put("NIE DZIEL PRZEZ 0. Wprowadz inna liczbe",nl);
+	endif;
+	until(zm2!=0);
+		mov(zm1,eax);
+		cdq();
+		idiv(zm2,edx:eax);
+		mov(eax,wyndziel);
+		stdout.put("Wynik dzielenia to: ",wyndziel,nl);
+		stdout.put("Reszta dzielenia to: ");
+		stdout.puti32(edx);
+	elseif(wyb=5)then
+		stdout.put("Wprowadz liczbe potegowana",nl);
+		stdin.get(zm1);
+		stdout.put("Wprowadz wykladnik potegi ",nl);
+		stdin.get(zm2);
+		mov(0,dodatkowa);
+			if(zm2<0)then
+				neg(zm2);
+				mov(true,czyminus);
+			elseif(zm2=0)then
+				stdout.put("Wynik to 1",nl);
+				mov(1,dodatkowa);
+			else	
+				mov(false,czyminus);
+			endif;
+		mov(zm1,eax);
+		mov(zm2,edx);
+		while(edx>1 && dodatkowa=0)do
+			intmul(zm1,eax);
+			sub(1,edx);
+		endwhile;
+	if(dodatkowa=0)then
+	if(czyminus=true)then
+	stdout.put("Wynik to 1/ ");
+	stdout.puti32(eax);
+	else
+	stdout.put("Wynik to ");
+	stdout.puti32(eax);
+	endif;	
+	endif;
+	endif;
+	until(wyb=0);
+
+end kalkulator;
