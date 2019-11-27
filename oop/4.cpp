@@ -1,10 +1,19 @@
 #include <iostream>
 
 using namespace std;
+//////////////////////////////////
+class Life_function
+{
+public:
+    virtual void eat()=0;
+    virtual void drink()=0;
+};
+////////////////////////////////
 class Animal
 {
     static int counter ;
     string name;
+    
 public:
     Animal(string name)
     {
@@ -34,8 +43,10 @@ public:
     }
 };
 int Animal::counter = 0;
+//////////////////////////////////////////////////////////////////
 //derived_class    base_class     
-class Dog: public Animal
+
+class Dog: public Animal, public Life_function
 {
 public:
     Dog(string name):  Animal(name)
@@ -60,8 +71,51 @@ public:
         
         return dajRodzajZwierzecia() + get_name();
     }
+    virtual void eat()
+    {
+        cout << "Dog:eat" << endl;
+    }
+    virtual void drink()
+    {
+        cout << "Dog:drink" << endl;
+    }
 
 };
+//////////////////////////////////
+class Cat: public Animal, public Life_function
+{
+public:
+    virtual void eat()
+    {
+        cout << "Cat:eat" << endl;
+    }
+    virtual void drink()
+    {
+        cout << "Cat:drink" << endl;
+    }
+};
+/////////////////////////////////////////////////
+class Shelter_animal
+{
+    Animal* array_pointer_animal [100] ;
+public:
+    Shelter_animal()
+    {
+        for(int i=0;i<100;i++)
+        {
+            array_pointer_animal[i]= NULL;
+        }
+    }
+    void take_animal(Animal* z,int number)
+    {
+        array_pointer_animal[number] = z;
+    }
+    Animal* przygarnij_zwierzatko(int number)
+    {
+        return array_pointer_animal[number];
+    }
+};
+//////////////////////////////////////////////////////////////////
 int main()
 {
     Animal a1 = Animal("a1");
@@ -89,5 +143,27 @@ int main()
     Dog& refDog2 = dynamic_cast<Dog&>(refDog);
     cout << refDog2.to_string() << endl;
     cout << refDog2.dajRodzajZwierzecia() << endl;
+    cout << "////////////////////////////////////\n";
+    Life_function* f = &d1;
+    f -> eat();
+    Shelter_animal s1 = Shelter_animal();
+    Dog d5 = Dog("d5");
+    Dog d6 = Dog("d6");
+    Dog d7 = Dog("d7");
+    s1.take_animal(&d5,0);
+    s1.take_animal(&d6,1);
+    s1.take_animal(&d7,2);
+    Dog * pom;
+    pom = dynamic_cast<Dog*>(s1.przygarnij_zwierzatko(1));
+    if(pom == NULL)
+    {
+        cout << "std::bad_cast" << endl;
+    }
+    else 
+    {
+        pom->give_paw();
+        cout<<pom->to_string()<<endl;
+    }
+    //to_string();
     return 0;
 }
