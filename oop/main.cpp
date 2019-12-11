@@ -47,6 +47,18 @@ int main(int argc, char *argv[])
     //cout << b2.getValue();
     vector<string> str;
     string pom = "";
-
+    while(pom!= "exit")
+    {
+        cout << "Podaj slowo: ";
+        cin >> pom;
+        if(pom != "exit")
+        {
+            str.push_back(pom);
+        }
+    }
+    for(string s:str)
+    {
+        cout << s << endl;
+    }
     return a.exec();
 }
