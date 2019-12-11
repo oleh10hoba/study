@@ -62,3 +62,13 @@ int main(int argc, char *argv[])
     }
     return a.exec();
 }
+
+/*
+void MainWindow::set4(QString a, QString b, QString c, QString d)
+{
+    QStringList list;
+    list << a << b << c;
+    list << d;
+}
+
+*/
