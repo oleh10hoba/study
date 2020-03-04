@@ -1,0 +1,99 @@
+body
+{
+    background: #383827;
+}
+#kontener
+{
+    margin: 0;
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#menu 
+{
+    float:left;
+    width:100%;
+    margin:0; 
+    padding:0;
+    background:#ffffff;
+    border-bottom:2px solid #0000a0;
+}
+#menu li 
+{
+    float:left;
+    margin:0; 
+    padding:0;
+    list-style:none; 
+    padding-right:3px;
+    font-family:"Lucida Grande", sans-serif; 
+    font-size:85%;
+}
+#menu a 
+{ 
+    float:left;
+    display:block; 
+    margin:0; 
+    padding:4px 8px;
+    color:#ffffd7; 
+    text-decoration:none; 
+    border: 1px solid #0000c6; 
+    border-bottom:none;
+    background:#0000a0;
+}
+#menu a:hover 
+{
+    background:#0000d5;
+    color: rgb(59, 66, 82);
+    text-decoration:none; 
+}
+#tresc
+{
+    float:left;
+    width:75%;
+    padding:1%;
+    background: rgb(100, 80, 80);
+}
+#pasek 
+{
+    float:right;
+    width:25%; 
+    padding:1%;
+}
+#stopka
+{
+    clear:both;
+    width:100%;
+    padding:5px 0 5px 0;
+    text-align: center;
+}
+#pasek
+{
+    background: lightgray;
+    float:right;
+    width:20%; 
+    padding:1%;
+    margin-left: 1%;
+}
+#stopka
+{
+    background: #958dff;
+    clear:both;
+    width:100%;
+    padding:5px 0 5px 0;
+    text-align:center;
+}
+.box
+{
+    background: #0000a0;
+    color: #dbffff;
+    padding: 5px;
+    margin: 5px;
+    font-size: 90%;
+}
+.box a
+{
+    color: #ffffb0;
+}

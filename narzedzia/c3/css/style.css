@@ -1,0 +1,24 @@
+body
+{
+    background: lightgray;
+}
+a,h4
+{
+    color: red;
+}
+a:hover
+{
+    color: rgb(38, 9, 168);
+}
+a:visited
+{
+    color: rgb(104, 16, 16);
+}
+a:link
+{
+    color: rgb(21, 170, 66);
+}
+a:active
+{
+    color: rgb(183, 24, 204);
+}

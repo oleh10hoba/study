@@ -1,0 +1,38 @@
+body
+{
+    background: lightblue;
+    text-align: center;
+}
+table
+{
+    background: blue;
+    margin: 2%;
+    border: 1pt solid lightyellow;
+}
+thead
+{
+    color: yellow;
+    
+}
+.koniec
+{
+    color: yellow;
+    background: blue;
+}
+caption
+{
+    font-size: 150%;
+}
+tbody
+{
+    background: lightyellow;
+}
+.parzysty
+{
+    background: yellow;
+}
+#stopka
+{
+    background: blue;
+    position: bottom;
+}
