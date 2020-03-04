@@ -1,4 +1,4 @@
-body
+/*body
 {
     margin: 0;
     background-color: #2f3336;
@@ -50,4 +50,65 @@ nav
 .menu a:hover
 {
     color: #0a2b42;
+}
+
+*/
+
+body
+{
+    margin: 0;
+    background-color: #2f3336;
+    color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+.menu 
+{
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+.menu li 
+{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #98bed8;
+    margin-left: 3px;
+    font-size: 200%;
+}
+.menu li:hover 
+{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #f0f0f0;
+    margin-left: 3px;
+}
+.menu li a 
+{
+    display : block;
+    padding : 4pt;
+    text-decoration : none;
+}
+.nav li li a 
+{
+    width: 160px;
+}
+.menu li li:hover 
+{
+    background: white;
+}
+.menu li ul 
+{ 
+    overflow: hidden;
+    display: none;
+}
+ul.menu li:hover ul 
+{
+    position: absolute;
+    background: #98bed8;
+    padding: 0;
+    display: block;
+    width: 177px;
 }
