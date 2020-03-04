@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='pl'>
+    <head>
+        <title>My page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+    </head>
+    <body>
+        
+        <nav>
+            
+            <ul class="menu">
+                <li> <a href="table.html">Tablica</a> </li>
+                <li> <a href="second.html">Znaczniki</a> </li>
+                <li> <a href="pizza.html">Pizza</a> </li>
+            </ul>
+        </nav>
+        <h1 class="logo">Oleh Hoba</h1>
+        <div>
+            <form action="win.html" method="post">
+                <table border="0">
+                        <tr>
+                            <td>Nazwisko:</td> 
+                            <td><input type="text" name="nazwisko"/></td>
+                        </tr>
+                        <tr>
+                            <td>Wiek:</td>
+                            <td><input type="text" name="wiek"/></td>
+                        </tr>
+                        <tr>
+                            <td>Państwo:</td>
+                            <td>
+                                <select id="country">
+                                    <option  value="P" /> Polska
+                                    <option value="U" /> Ukraina
+                                    <option value="A" /> USA <br />
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Adres e-mail:</td>
+                            <td><input type="text" name="mail"/></td>
+                        </tr>
+                        
+
+                     
+                </table>
+                     <br/><br/>
+                Zamawiam kurs: <br />
+                <input type="checkbox" name="C" value="C" /> PHP
+                <input type="checkbox" name="Java" value="J" /> C++
+                <input type="checkbox" name="PHP" value="PHP" /> Java <br />
+
+               
+                Sposob zaplaty: </br>
+                <input type="radio" name="plata" value="ec"/> eurocard 
+                <input type="radio" name="plata" value="v" /> visa
+                <input type="radio" name="plata" value="p" /> przelew bankowy <br/> 
+                
+                <input type="submit" value="Wyślij" />
+                <input type="reset" value="Wyczyść" />
+            </form>
+        </div>
+        <div id="stopka">&copy;OH </div>
+    </body>
+</html>

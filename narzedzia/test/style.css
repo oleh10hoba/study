@@ -1,0 +1,52 @@
+h1
+{
+    font-size: 42px;
+    font-weight: bolt;
+    color: #FA7c00;
+    text-align: center;
+}
+h1:hover
+{
+    font-size: 42px;
+    font-weight: bolt;
+    color: red;
+    text-align: center;
+}
+body
+{
+    background-color: gray;
+}
+#container
+{   
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#logo
+{
+    color: yellow;
+    margin-top: 20px;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+#menu
+{
+    background-color: #303030;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 10px;
+}
+#sidebar
+{
+
+}
+#content
+{
+
+}
+#footer
+{
+
+}

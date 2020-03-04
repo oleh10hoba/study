@@ -1,0 +1,35 @@
+body
+{
+    background-image: url("img/pollub.jpg"); 
+    font-size: 20px;
+
+}
+#container
+{
+    background-color: lightgreen;
+    width: 240px;
+    margin-left: 1px;
+    margin-right: auto;
+    margin-top: 1px;
+    padding: 10px;
+    box-shadow:  30px 30px 30px 5px rgba(204,204,204, 1);
+}
+input[type=text],
+input[type=password]
+{
+    width: 185px;
+    background-color: #efefef;
+    color: #666;
+    border: 2px solid #ddd;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+input[type=submit]
+{
+    background-color: red;
+    color: yellow;
+    width: 220px;
+    padding: 10px;
+}

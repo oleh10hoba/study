@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {background-color: #71f160;}
+        h1 {color: white; font-size: 2em}
+        p {color: #fafafa; font-size: 1.1em}
+    </style>
+    <script type="text/javascript">
+    function compute()
+    {
+        var today = new Date();
+
+        var second = today.getSeconds();
+        var minute = today.getMinutes();
+        var hour = today.getHours();
+
+        var day = today.getDate(); 
+        var month = today.getMonth()+1;
+        var year = today.getFullYear();
+
+        if(hour<10) hour = "0"+hour;
+        if(minute<10) minute = "0"+minute;
+        if(second<10) second = "0"+second;
+
+
+        document.getElementById("clock").innerHTML = day+"/"+month+"/"+year+"        "+hour+":"+minute+":"+second;
+        setTimeout("compute()",1000);
+    }
+    </script>
+
+</head>
+<body onload="compute();">
+    <nav>
+        <a class="brand-logo right" id="clock"></a>
+    </nav>
+    <ul></ul>
+    
+</form>
+<script>
+    require('./two.js');
+    const electron = require('electron');
+    const {ipcRenderer} = electron;
+</script>
+    <h1>Second page</h1>
+</body>
+</html>

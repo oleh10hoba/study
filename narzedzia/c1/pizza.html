@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang='pl'>
+
+    <head>
+
+        <title>Pizza</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css" type="text/css" /> 
+
+    </head>
+
+    <body>
+        
+        <form action="mailto:oleg.10@ukr.net" method="post">
+
+            <li> <a href="index.html">To main</a> </li>
+
+            <h1>Kreator pizzy</h1>
+
+            <div>
+
+                <fieldset>
+
+                    <legend>Rozmiar</legend>
+
+                    Mała<input type="radio" name="size" value="s"><br/>
+
+                    Średnia<input type="radio" name="size" value="m"><br/>
+
+                    Duża<input type="radio" name="size" value="l"><br/>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Dodatki</legend>
+
+                    <input type="checkbox" value="salami"/>Salami<br/>
+
+                    <input type="checkbox" value="szynka"/>Szynka<br/>
+
+                    <input type="checkbox" value="krewetki"/>Krewetki<br/>
+
+                    <input type="checkbox" value="cebula"/>Cebula<br/>
+
+                    <input type="checkbox" value="pieczarki"/>Pieczarki<br/>
+
+                    <input type="checkbox" value="oliwki"/>Oliwki<br/>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Sosy</legend>
+
+                    <h4>Wybierz sos</h4>
+
+                    <select size="4" name="sosy" multiple>
+
+                        <option value="c">Czosnkowy</option>
+
+                        <option value="l">Pomidorowy lagodny</option>
+
+                        <option value="b">Pomidorowy bazulka</option>
+
+                        <option value="p">Pomidorowy piekantny</option>
+
+                    </select>
+
+                    <br/>Inne uwagi<br/>
+
+                    <textarea id="uwagi" rows="5" cols="70"></textarea>        
+
+
+
+                </fieldset>
+
+            </div>
+
+            <input type="reset" value="Wyczyść wprowadzon dane" />
+
+            <input type="submit" value="Wyślij zamówienie" />
+
+        </form>
+
+    </body>
+
+</html>
